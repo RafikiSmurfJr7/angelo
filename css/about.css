@@ -1,0 +1,262 @@
+
+body {
+    background-color: #d7d7d7;
+}
+
+.banner {
+    height: 60vh;
+    /*Vai cobrir a tela toda*/
+    background-image: url(../imagens/sobre2.jpg);
+    background-position: center;
+    /* Coloca a imagem no centro da tela*/
+    background-size: cover;
+    /* Vai cobrir o banner inteiro*/
+
+    display: flex;
+    /*Para o h1*/
+    align-items: center;
+    /*Para o h1*/
+    justify-content: center;
+    /*Para o h1*/
+}
+
+.banner h1 {
+    font-size: 4em;
+    color: #333333;
+    /*Usei a cor referente a logo*/
+    margin-bottom: 10px;
+}
+
+
+.banner h1 span {
+    color: white;
+}
+
+/*------------------------Fim do menu------------------- */
+/* Inicio do conteudo da página */
+
+.wrapper1{
+    margin-top: 50px;
+}
+
+.wrapper1 h1{
+    /* font-family: 'Allura', cursive; */
+    font-size: 52px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+
+.team .team_member{
+    color: #000;
+    background-color: white;
+    margin: 5px;
+    width: 300px;
+    margin-bottom: 40px;
+    padding: 40px;
+    line-height: 1.5;
+    position: relative;
+    margin-right: 20px;
+   
+}
+
+.team .team_member h3{
+    color: black;
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+.team .team_member p{
+    color: black;
+}
+.team .team_member .team_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 40%;
+}
+.team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+
+
+
+
+/* outro*/
+.sobre_nos {
+    /* Class da caixa */
+    margin: 0px;
+    padding: 0px;
+    line-height: m1.5;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.sobre_nos h3 {
+    /* Titulo da caixa */
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 30px;
+}
+
+.sobre_nos h3::after {
+    /* Titulo da caixa */
+    content: "";
+    height: 5px;
+    width: 15em;
+    background-color: red;
+    border-radius: 7px;
+    display: block;
+    margin: auto;
+}
+
+.wrapper {
+    padding: 0px 60px;
+    margin: 60px auto;
+}
+
+.conteudo {
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding: 0px 30px;
+    line-height: 1.5;
+    /* Espaçameto etre linhas */
+}
+
+.conteudo h3 {
+    /* font-family: Georgia, serif; */
+    color: black;
+    font-size: 2.0em;
+}
+
+.conteudo p {
+    font-size: 17px;
+    color: black;
+    margin: 20px;
+}
+
+.conteudo .button {
+    margin-top: 4px;
+}
+
+.conteudo .button a {
+    color: #fff;
+    background-color: grey;
+    border: 1px solid black;
+    padding: 10px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.conteudo .button a:hover {
+    background-color: #262626;
+}
+
+.conteudo .socials {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.conteudo .socials a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 0px 7px;
+}
+
+.conteudo .socials a:hover {
+    background-color: white;
+    transition: 1s ease;
+}
+
+.conteudo .socials i {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.imagem {
+    width: 40%;
+    float: right;
+    padding: 0px 30px;
+}
+
+.imagem img {
+    max-width: 100%;
+    height: 400px;
+}
+
+
+.prencher{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: transparent;
+    height: 400px;
+}
+
+
+/* FIM DO CONTEUDO */
+
+
+/* COMEÇO DA PARTE RESPONSIVA */
+@media screen and (max-width:900px) {
+    .sobre_nos {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .sobre_nos h1 {
+        font-size: 32px;
+    }
+
+    .conteudo {
+        width: 100%;
+        float: none;
+    }
+
+    .conteudo .button {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .conteudo .button a {
+        padding: 8px 20px;
+    }
+
+    .conteudo .socials {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .conteudo .socials a {
+        font-size: 20px;
+    }
+
+    .imagem {
+        float: none;
+        width: 100%;
+        margin-top: 25px;
+    }
+}

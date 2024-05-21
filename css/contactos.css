@@ -1,0 +1,317 @@
+
+body {
+    background-color: #808080;
+}
+
+.banner {
+    height: 40vh;
+    /*Vai cobrir a tela toda*/
+    background-color: #616161;
+    background-position: center;
+    /* Coloca a imagem no centro da tela*/
+    background-size: cover;
+    /* Vai cobrir o banner inteiro*/
+
+    display: flex;
+    /*Para o h1*/
+    align-items: center;
+    /*Para o h1*/
+    justify-content: center;
+    /*Para o h1*/
+}
+
+.banner h1 {
+    font-size: 4em;
+    color: #FF4B63;
+    /*Usei a cor referente a logo*/
+    margin-bottom: 10px;
+}
+
+
+.banner h1 span {
+    color: #191919;
+}
+
+/* Fim do Menu */
+/* Estilos atualizados para o layout */
+.container4 {
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #353333;
+}
+
+.mapa {
+    max-width: 1200px;
+    flex: 1;
+    margin-right: 20px;
+}
+.mapa .title1{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+.title1 h1{
+    align-items: center;
+    color: white;
+    font-size: 2.4em;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+.title1 h1 span {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+
+    border-bottom: 5px solid #FF4B63; /* Define uma linha verde com 2 pixels de espessura */
+}
+
+.mapbox {
+    margin-left: 40px;
+    max-width: 1200px;
+    width: 80%;
+    height: 400px;
+    position: relative;
+}
+
+.container4 iframe {
+    width: 100%;
+    height: 100%; /* Ajuste a altura para ocupar o espaço disponível */
+    border: 0;
+}
+
+/* Estilos atualizados para a caixa de informações */
+.info {
+    height: 300px;
+    margin-right: 20px;
+    padding: 1%;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.info p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.redes-sociais {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.redes-sociais li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes-sociais a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #2f2f2f;
+    color: #fff;
+    text-decoration: none;
+}
+
+.redes-sociais a:hover {
+    background-color: #959595;
+}
+
+
+/* Conteudo */
+
+.caixa {
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Josefin Sans', sans-serfif; */
+}
+
+section {
+    padding: 40px 15%;
+}
+
+.contacto {
+    background: white;
+    /*Cor de fundo */
+    height: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+
+.contacto-img img {
+    max-width: 100%;
+    /*Largura da imagem */
+    height: auto;
+    border-radius: 10px;
+}
+
+.contacto-form h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+    /* Espaçamento do conteudo em baixo */
+}
+
+.contacto-form h1 span {
+    /* COLOCAR COR SEGUNDÁRIA DO SITE !! */
+    color: #FF4B63;
+}
+
+.contacto-form p {
+    /*P */
+    color: black;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.contacto-form i {
+    font-size: 20px;
+    color: black;
+    margin-top: 0px;
+}
+
+.contacto-form i p {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.contacto-form {
+    position: relative;
+}
+
+.contacto-form input,
+form textarea {
+    width: 100%;
+    /* Largura dos campos */
+    padding: 15px;
+    /* Tamanho */
+    border: none;
+    /* Sem linhas */
+    outline: none;
+    background: #191919;
+    /* Cor de fundo dos campos */
+    color: #FF4B63;
+    /*Cor que vai ficar no botao de enviar */
+    font-size: 0.9rem;
+    /* Tamanho da letra  */
+    margin-bottom: 0.7rem;
+    /* espaçamento entre linhas  */
+    border-radius: 10px;
+    /* Arredondamento */
+}
+
+.contacto-form textarea {
+    background: #191919;
+    resize: none;
+    height: 200px;
+    width: 70%;
+    border: none;
+}
+
+.contacto-form .btn2 {
+    /* BOTÃO */
+    display: inline-block;
+    background: #191919;
+    /*Cor preta*/
+    font-size: 1rem;
+    /*Tamanho */
+    letter-spacing: 1px;
+    /*Espaçamento */
+    font-weight: 600;
+    /*Grossura da letra */
+    border: 2px solid transparent;
+    border-radius: 5px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+
+.contacto-form .btn2:hover {
+    border: 2px solid #FF4B63;
+    /* Cor rosa */
+    background: transparent;
+    transform: scale(1.1);
+    /* Efeito */
+}
+
+/*COMEÇO DO FOOTER */
+
+
+/* COMEÇO DA PARTE RESPONSIVA */
+@media(max-width: 1570px) {
+    section {
+        padding: 80px 3%;
+        transition: .2s;
+    }
+
+    .contacto-form h1 {
+        font-size: 40px;
+    }
+
+    .contacto-form p {
+        margin-bottom: 3rem;
+    }
+}
+
+@media(max-width:1090px) {
+    .contacto {
+        grid-gap: 2rem;
+        transition: .3s;
+    }
+}
+
+@media(max-width:1000px) {
+    .contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-img img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footernav ul {
+        flex-direction: column;
+    }
+
+    .footernav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}

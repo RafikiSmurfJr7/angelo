@@ -1,0 +1,78 @@
+body{
+    text-align: center; /*deiixa tudo centrado*/
+    /* font-family: Arial, Helvetica, sans-serif; */ /*Tipo de letra*/
+    background-color: rgb(113, 100, 100); /*Cor de fundo*/
+    background-image: url(../imagens/halteres.jpeg); /*Caminho para a imagem de fundo do login*/
+    background-size: cover; /*Vai cobrir a pagina toda*/
+    background-position: center; 
+    
+}
+html {
+    height: 100vh;
+}
+form{
+    max-width: 300px; /*largura maxima*/
+    margin: 0 auto; 
+    padding: 20px; /*espaçamento*/
+    background-color: white; /*cor de fundo*/
+    border-radius: 10px; /*deixar as bordas mais arredondadas*/
+}
+h1{
+    margin-top: 120px; /*Titulo do Formulario*/ 
+}
+input[type="text"],  /* Campos do Formulario*/
+input[type="Email"],
+input[type="password"]{
+    display: block;
+    width: 100%;/*largura da caixa de texto*/
+    margin-bottom: 10px; /*espaçameto*/
+    padding: 5px;
+    box-sizing: border-box; /*Maior*/
+}
+.buttons{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+input[type="submit"]{  /* Botão Entrar*/
+    background-color:green ;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; /*Quando passamos com o rato por cima do botao vai */
+    padding: 15px 20px; /*Vai deixar o botao maior*/
+    
+}
+input[type = "submit"]:hover{
+    background-color: darkgreen; /*Quando o cursor passar em cima vai ficar com um verde mais escuro*/
+}
+a{
+    align-items: center;
+    background-color: green;
+    font-size: 12px;
+    float: right;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+a:hover{
+    background-color: darkgreen;
+}
+
+.alert-error {
+    background-color: #F8D7DA;
+    color: #672C42;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    border: 1px solid #F4C4C9;
+    max-width: 20%;
+    margin: auto;
+    margin-bottom: 13px;
+}
+

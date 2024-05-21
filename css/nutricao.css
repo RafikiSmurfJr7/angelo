@@ -1,0 +1,299 @@
+
+
+body {
+    background-color: #ffffff;
+}
+
+.banner {
+    height: 60vh;
+    /*Vai cobrir a tela toda*/
+    background-image: url(../imagens/nutr-1.jpg);
+    background-position: center;
+    /* Coloca a imagem no centro da tela*/
+    background-size: cover;
+    /* Vai cobrir o banner inteiro*/
+
+    display: flex;
+    /*Para o h1*/
+    align-items: center;
+    /*Para o h1*/
+    justify-content: center;
+    /*Para o h1*/
+}
+
+.banner h1 {
+    font-size: 4em;
+    color: #FF4B63;
+    /*Usei a cor referente a logo*/
+    margin-bottom: 10px;
+}
+
+
+.banner h1 span {
+    color: #191919;
+}
+
+/* Conteudo da pagina */
+.conteudo {
+    border: border-box;
+    background-color: white;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+.main  h1 {
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+
+.main .text h1 span {
+    margin-left: 15px;
+    color: orange;
+    /*Cor por mudar */
+    /* font-family: mv boli; */
+    /* O estilo de letra  */
+    line-height: 22px;
+    font-size: 70px;
+}
+
+.main .img_comid img {
+    width: 700px;
+    position: relative;
+    left: 70px;
+    border-radius: 9px;
+}
+
+.conteudo p {
+    width: 600px;
+    text-align: justify;
+    position: relative;
+    left: 90px;
+    bottom: 90px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+ /* Segunda parte*/
+
+/* Estilos gerais */
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para a seção de dieta */
+.diet {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.diet h1{
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: 3rem;
+}
+
+.controls {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.buttons { /* BUTOES*/
+    display: inline-block; /* botões em linha */
+    cursor: pointer; 
+    margin: 0 10px; /* margem entre os botões */
+    padding: 10px 20px; /* preenchimento */
+    color: #000000; /* Cor */
+    position: relative; 
+}
+.buttons.active::after {
+    content: ''; /* Adiciona conteúdo ao pseudo-elemento */
+    position: absolute; /* Define posição absoluta em relação ao botão */
+    left: 0; /* Posiciona no início do botão */
+    bottom: 0; /* Posiciona na parte inferior do botão */
+    width: 100%; /* Largura total do pseudo-elemento */
+    height: 2px; /* Altura da linha preta */
+    background-color: #000; /* Cor da linha preta */
+    border-radius: 10px; /* Borda arredondada para a linha */
+}
+
+.controls li {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.controls li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.controls li h3 {
+    margin-top: 10px;
+}
+
+.image-container {
+    display: flex; /* Usa flexbox para organizar os elementos em linha */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha conforme necessário */
+    justify-content: space-around; /* Distribui os elementos igualmente ao redor */
+}
+
+.box {
+    width: calc(33.33% - 20px); /* Largura de 33.33% menos a margem entre as caixas */
+    margin-bottom: 40px; /* Adiciona espaço entre as caixas na parte inferior */
+    box-sizing: border-box; /* Inclui a borda e o preenchimento na largura total */
+    text-align: left; /* Alinha o texto à esquerda dentro da caixa */
+}
+.diet-image {
+    position: relative; /* Define a posição relativa para permitir alinhamento vertical */
+    width: 100%; /* Garante que a imagem ocupe toda a largura da caixa */
+    height: 300px; /* Altura fixa da imagem (ajuste conforme necessário) */
+    overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse a altura definida */
+}
+
+.diet-image img {
+    height: 100%;
+    width: 100%; /* Ajusta a largura da imagem para ocupar toda a largura da caixa */
+    object-fit: cover;
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+    margin-bottom: 10px; /* Adiciona espaço na parte inferior da imagem */
+}
+
+.diet-content {
+    padding: 10px; /* Adiciona preenchimento interno */
+    background-color: #f8f9fa; /* Cor de fundo para o conteúdo da caixa */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra sutil */
+}
+
+.diet-content h4{
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    color: #000000; /* Cor do texto azul */
+    text-decoration: none; /* Remove o sublinhado do link */
+    margin-bottom: 5px;
+}
+
+.diet-content p{
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.diet-content p span{
+    font-weight: bold;
+}
+.diet-content a{
+    line-height: 1.5;
+    color: rgb(122, 119, 128);
+    
+}
+
+/* Conteudo da pagina */
+
+.box3 {
+    background-color: rgba(0, 0, 0, 0.286);
+    color: white;
+    height: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 85%;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; /* Usando flexbox para layout horizontal */
+    flex-direction: row; /* Organizando os elementos em linha (horizontalmente) */
+    align-items: flex-start; /* Alinhando os elementos ao topo */
+}
+
+/* Estilo do título dentro da caixa */
+.box3 h2 {
+    margin-top: 22px;
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+.box3 h2 span{
+    color: #FF4B63;
+}
+.box3 p{
+    line-height: 1.5;
+    font-size: 18px;
+}
+.box3 p strong{
+    color: #565656;
+    font-size: 1.1em;
+}
+/* Estilo do resumo dentro da caixa */
+.summary {
+    width: 70%;
+    flex: 1; /* Ocupa o espaço restante */
+    margin-right: 20px; /* Margem à direita para separar dos tópicos */
+}
+
+/* Estilo da lista de tópicos */
+.topics {
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 20px;
+    width: 30%;
+    left: 70%;
+    list-style: none;
+    padding: 0;
+    display: flex; /* Usando flexbox para layout horizontal */
+    flex-direction: column; /* Organizando os elementos em coluna (verticalmente) */
+    justify-content: flex-start; /* Alinhando os elementos ao topo */
+}
+
+/* Estilo de cada item da lista de tópicos */
+.topics li {
+    
+    margin-bottom: 10px;
+    display: flex; /* Usando flexbox para layout horizontal */
+    align-items: center; /* Alinhando os elementos ao centro verticalmente */
+    margin-top: 30px;
+    color: #ffffff;
+}
+.topics span{
+    color: #333;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+/* Estilo do ícone de tópico */
+.topic-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/*                 Parte responsiva                  */
+
+
+@media (max-width: 700px) {
+    .footernav ul {
+        flex-direction: column;
+    }
+
+    .footernav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}

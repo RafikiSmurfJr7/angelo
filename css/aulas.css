@@ -1,0 +1,326 @@
+
+:root{
+    --cor: #DC143C;
+    /*Chamar a car = color: var(--cor);*/
+}
+
+
+.banner {
+    height: 60vh;
+    /*Vai cobrir a tela toda*/
+    background-image: url(../imagens/banner2.jpg);  /*POR COLOCAR*/
+    background-position: center;
+    /* Coloca a imagem no centro da tela*/
+    background-size: cover;
+    /* Vai cobrir o banner inteiro*/
+    object-fit: cover;
+    opacity: 0.7;
+    display: flex;
+    /*Para o h1*/
+    align-items: center;
+    /*Para o h1*/
+    justify-content: center;
+    /*Para o h1*/
+}
+
+.banner h1 {
+    font-size: 4em;
+    color: #FF4B63;
+    /*Usei a cor referente a logo*/
+    margin-bottom: 10px;
+}
+
+/*Fim do Banner e do Menu*/
+
+
+
+/* PARTE DAS AULAS DE GRUPO*/
+
+.container3 {
+    width: 97.3%;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #afafaf 15%, #d9a0f2 100%);
+  }
+  
+.container3 h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+   /*  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+  
+  }
+  .container3 p{
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+.container3 main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+.container3  .group-class {
+    width: 400px;
+    
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+.container3 .group-class img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+.container3  .description {
+    padding: 20px;
+  }
+  
+.container3 .description h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+.container3 .description p {
+    color: #414141;
+    font-size: 0.9em;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+
+
+/* PARTE DA MUSCULAÇÃO*/
+/*.program .tit_musc{
+    font-size: 3em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.748);
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}*/
+
+.conteudo5 {
+    border: border-box;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.324);
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+.main  h1 {
+    font-size: 50px;
+    position: relative;
+    top: -150px;
+    right: 100px;
+}
+
+.main .text h1 span {
+    margin-left: 15px;
+    color: #FF4B63;
+    /*Cor por mudar */
+    /* font-family: mv boli; */
+    /* O estilo de letra  */
+    line-height: 22px;
+    font-size: 50px;
+}
+
+.main .img_comid img {
+    width: 550px;
+    position: relative;
+    left: 60px;
+    border-radius: 9px;
+}
+
+.conteudo5 p {
+    width: 600px;
+    text-align: justify;
+    position: relative;
+    margin-top: 20px;
+    left: 80px;
+    bottom: 90px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+
+/* EXERICIOS MUSCULAÇÃO*/
+.program{
+    background: linear-gradient(135deg, #d9a0f2 100%, #8a32a0 15%);
+    padding: 2%;
+    text-align: left;
+    width: 96%;
+}
+
+.program .title{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1;
+    margin-bottom: 40px;
+}
+.program-wrapper{
+    width: 92%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin: 2% 0;
+    gap: 2rem;
+    overflow-x: hidden;
+}
+
+.program-card{
+    position: relative;
+    height: 530px;
+    width: 30%;
+    min-width: 200px;
+    background-color: black;
+    overflow: hidden;
+}
+.program-card p {
+    padding: 0 20px; /* Adiciona padding para alinhar o texto dentro dos cartões */
+    text-align: left; /* Alinha o texto à esquerda dentro dos cartões */
+    margin-top: 10px; /* Adiciona espaço superior para o texto dentro dos cartões */
+}
+
+.program-img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+}
+
+.program-title{
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 1;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* HOVER*/
+.program-detail{
+    display: none;
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 20%; /* Reduz a altura do detalhe para se adequar à carta maior */
+    padding: 5%;
+    text-align: center;
+    font-size: 14px; /* Aumenta ligeiramente o tamanho da fonte */
+    letter-spacing: 1;
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+    
+}
+.program-card:hover .program-img{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.program-card:hover .program-detail {
+    position: absolute;
+    display: block;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.655);
+    color: white;
+    width: 100%;
+    height: 25%;
+    padding: 5%;
+    bottom: 0;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1;
+    line-height: 1.8;
+}
+/*--------------------PARTE NUTRICIONAL*-------------------*/
+.nutricao{
+    width: 100% ;
+    height: 400px;
+    background: linear-gradient(135deg, #d9a0f2 100%, #afafaf 15%);
+    justify-content: center;
+
+}
+.container4 {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 3%;
+    border-radius: 8px;
+    width: 70%;
+    margin:auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo do título dentro do container */
+.container4 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo do texto dentro do container */
+.container4 p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo do botão dentro do container */
+.container4 .botao {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo do botão ao passar o mouse */
+.container4 .botao:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+@media (max-width: 700px) {
+    .footernav ul {
+        flex-direction: column;
+    }
+
+    .footernav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
